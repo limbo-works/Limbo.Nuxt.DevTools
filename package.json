@@ -1,0 +1,21 @@
+{
+	"name": "my-nuxt-layer",
+	"type": "module",
+	"version": "0.0.1",
+	"main": "./nuxt.config.js",
+	"scripts": {
+		"dev": "nuxi dev .playground",
+		"dev:prepare": "nuxt prepare .playground",
+		"build": "nuxt build .playground",
+		"generate": "nuxt generate .playground",
+		"preview": "nuxt preview .playground",
+		"prettier": "prettier \"**/*.{js,vue,md,yml,css,scss,json}\"",
+		"lint": "yarn prettier --check . && yarn eslint --quiet .",
+		"lint:fix": "yarn prettier --write . && yarn eslint --fix --quiet ."
+	},
+	"devDependencies": {
+		"@limbo-works/lint-configs": "^2.0.0",
+		"nuxt": "^3.13.0",
+		"vue": "latest"
+	}
+}
